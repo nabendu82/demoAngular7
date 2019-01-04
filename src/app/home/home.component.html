@@ -1,0 +1,5 @@
+<h1 [class.gray]="h1Style">Home</h1>
+<h5 [ngClass]="{'gray': !h1Style, 'large': h1Style}">This is Home</h5>
+<h6 [style.color]="h1Style ? 'gray' : 'green'">This is the great Home</h6>
+<h6 [ngStyle]="{'color': 'red', 'backgroundColor': 'yellow'}">This is a styled Home</h6>
+<button (click)="firstClick()">Click Me</button>
